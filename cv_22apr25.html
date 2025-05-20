@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thai Minh Khang - CV</title>
+  <title>Thai Minh Khang – CV</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -13,7 +13,7 @@
       background: #f9f9f9;
       color: #333;
     }
-    button {
+    button#download-pdf {
       background: #1a73e8;
       color: white;
       border: none;
@@ -23,7 +23,7 @@
       margin-bottom: 20px;
       font-size: 0.9em;
     }
-    button:hover {
+    button#download-pdf:hover {
       background: #1558b0;
     }
     h1 {
@@ -79,75 +79,122 @@
       margin-bottom: 6px;
     }
     @media print {
-      button { display: none; }
+      button#download-pdf { display: none; }
       body { background: #fff; margin: 0; }
       section { box-shadow: none; border: none; padding: 0; margin: 0; }
     }
   </style>
 </head>
 <body>
-  <button onclick="window.print()">Download as PDF</button>
+    <button id="download-pdf">Télécharger en PDF</button>
   <h1>Thai Minh Khang</h1>
-  <p>
-    <strong>Objective</strong> -> Searching for <strong>Intership</strong> from <strong>September 2025</strong> for duration of <strong>6 months to 1 year</strong><br/>
-    <strong>Internship rythme</strong> -> 2 weeks at school, 3 weeks at company<br/>
-    <strong>Email:</strong> mr.thaiminhkhang@gmail.com<br />
-    <strong>Phone:</strong> +33 6 56 66 65 55<br />
-    <strong>Location:</strong> Paris, France<br/>
-    <strong>Languages</strong> : English C2, French C2, Vietnamese C2 <br/>
-  </p>
-  <p>
-    <a href="https://github.com/Mika1011-blip" target="_blank">GitHub</a> https://github.com/Mika1011-blip <br>
-    <a href="https://leetcode.com/u/mikablip/" target="_blank">LeetCode</a> https://leetcode.com/u/mikablip/ <br>
-    <a href="https://www.linkedin.com/in/minh-khang-thai-b3bb84231/" target="_blank">LinkedIn</a> https://www.linkedin.com/in/minh-khang-thai-b3bb84231/
-  </p>
+  <div class="contact-info">
+<!--
+    <p class="objective">
+      <strong>Objectif :</strong> Recherche un stage à partir de <strong>septembre 2025</strong> pour une durée de <strong>6 mois à 1 an</strong>.<br/>
+      <strong>Rythme :</strong> 2 semaines à l’école, 3 semaines en entreprise.
+    </p>
+-->
+    <p>
+      <strong>Email :</strong> mr.thaiminhkhang@gmail.com<br/>
+      <strong>Téléphone :</strong> +33 6 56 66 65 55<br/>
+      <strong>Localisation :</strong> Paris, France<br/>
+      <strong>Langues :</strong> Anglais C2, Français C2, Vietnamien C2
+    </p>
+    <p>
+      <a href="https://github.com/Mika1011-blip" target="_blank">GitHub - https://github.com/Mika1011-blip</a><br/>
+      <a href="https://leetcode.com/u/mikablip/" target="_blank">LeetCode - https://leetcode.com/u/mikablip</a><br/>
+      <a href="https://www.linkedin.com/in/minh-khang-thai-b3bb84231/" target="_blank">LinkedIn - https://www.linkedin.com/in/minh-khang-thai-b3bb84231</a>
+    </p>
+  </div>
 
   <section>
-    <h2>About</h2>
+    <h2>À propos</h2>
     <p>
-      I am enrolled in a Bachelor's degree program specializing in Data Development and Artificial Intelligence at ECE Paris, with an expected graduation in 2026. Passionate about leveraging mathematics and programming to extract insights from complex datasets, I bring a strong foundation in Python, C++, and statistical methods. My project experience includes data visualization using Python’s Matplotlib and implementing algorithms for predictive modeling, demonstrating my ability to apply technical skills effectively. I am eager to contribute my analytical mindset and technical expertise to innovative, data-driven projects.
+      Actuellement en Licence « Développement de Données et Intelligence Artificielle » à ECE Paris (promotion 2026), je suis passionné par l’extraction d’informations à partir de données complexes. J’ai développé une solide expertise en Python, C++ et méthodes statistiques, avec des projets allant de la visualisation de données à la modélisation prédictive. Je souhaite mettre mon sens analytique et mes compétences techniques au service de projets innovants et data-driven.
     </p>
   </section>
 
   <section>
-    <h2>Skills</h2>
-    <h3>Mathematics</h3>
+    <h2>Compétences</h2>
+
+    <h3>Mathématiques</h3>
+<ul>
+  <li><strong>Calcul différentiel et intégral :</strong> calcul multivariables (dérivées partielles, gradient, divergence, Jacobien), intégrales multiples et de surface, séries de Taylor multivariables, équations différentielles ordinaires</li>
+  <li>
+  <strong>Algèbre linéaire :</strong> espaces vectoriels et changements de base, valeurs et vecteurs propres, décomposition en valeurs singulières (SVD), décomposition spectrale ; <br>Recherche autodidacte, motivée par la curiosité : espaces de Banach (thème majeur), calcul de normes sur espaces vectoriels normés (norme p, norme ∞), décomposition de Bruhat ; lecture de <em>Introduction to Linear Algebra</em> de Strang et visualisation via « Essence of Linear Algebra » de 3Blue1Brown
+</li>
+
+</ul>
+
+
+    <h3>Informatique</h3>
     <ul>
-      <li>Differential equations</li>
-      <li>Introduction to complex number analysis</li>
-      <li>Linear algebra: determinants, linear applications, change of basis, eigenvectors &amp; eigenvalues</li>
-      <li>Calculus: derivatives, integrals, limits, Taylor series, L’Hôpital’s Rule</li>
-      <li>Sequences &amp; series: convergence/divergence tests</li>
-      <li>Boolean algebra</li>
-    </ul>
-    <h3>Computer Science</h3>
-    <ul>
-      <li>Programming: C, C++, Python (Pandas, NumPy, Matplotlib, web scraping libs), TensorFlow (Keras), Java, JavaScript (Node.js), HTML/CSS, PHP</li>
-      <li>Algorithms: Object-oriented programming (OOP), linked lists, recursion, divide &amp; conquer</li>
-      <li>Machine Learning: Decision Trees, Random Forests</li>
-      <li>Data Science: Data cleaning, visualization, predictive modeling</li>
-      <li>Tools: VS Code, Anaconda (Jupyter Notebook), MySQL Workbench, phpMyAdmin (XAMPP), Git, Kaggle, DatascienceTest platform, Code::Blocks</li>
+      <li><strong>Programmation :</strong> C, C++, Python (Pandas, NumPy, Matplotlib, web scraping), TensorFlow (Keras), Java, JavaScript (Node.js), HTML/CSS, PHP,SQL</li>
+
+<li><strong>Data Structures & Algorithms:</strong> arrays, hashing, linked lists, stacks, two pointers, sliding window, binary search, trees, algorithmic complexity, recursion, divide & conquer, object-oriented programming</li>
+
+
+      <li><strong>Machine Learning :</strong> réseaux de neurones convolutionnels (exploration d’architectures CNN telles que ResNet) ; arbres de décision, forêts aléatoires</li>
+      <li><strong>Data Science :</strong> nettoyage de données, visualisation, modélisation prédictive</li>
+      <li><strong>Outils :</strong> VS Code, Anaconda (Jupyter), MySQL Workbench, phpMyAdmin (XAMPP), Git, Kaggle, plateforme DatascienceTest</li>
     </ul>
   </section>
 
   <section>
-    <h2>Projects</h2>
+    <h2>Projets</h2>
     <ul>
-      <li><strong>Web Application for Employee-Employer Matching (2025)</strong>: Built a full-stack web app where users log in as job seekers or providers, upload CVs, cover letters, or job details. Implemented text extraction and TF‑IDF vectorization (from scratch) and measured compatibility between CV and job offer via cosine similarity.</li>
-      <li><strong>Neural Network for Iris-Based Illness Prediction (2025-Ongoing)</strong>: Developing a TensorFlow/Keras model that takes an image of a human iris and predicts potential illness, focusing on data preprocessing, network architecture, and training optimization.</li>
-      <li><strong>Predictive Model for Cardiovascular Health (2024) </strong> (Python/pandas - Academic Project): Developed a machine learning model on the DatascienceTest platform to predict cardiovascular health risks. Analyzed health data, engineered features, and implemented predictive algorithms to identify risk factors. Focused on testing model accuracy and refining predictive capabilities for real-world applications.</li>
-      <li><strong>Real Estate Price Prediction (2024)(Kaggle Individual Project – Self-Improvement):</strong> Leveraged Python (Pandas) to analyze real estate data and develop predictive models. Built a Decision Tree Regressor to predict prices based on property traits, identified overfitting as a limitation, then improved accuracy using Random Forests and Gradient Boosting.</li>
-      <li><strong>Train Reservation Management System (2024)</strong> (C++ - Academic Project): Designed and developed a robust train reservation system leveraging OOP principles, data structures (vectors, maps), and algorithms for efficient schedule and passenger management. Integrated time functions for date validation, scheduling, and dynamic ticket filtering. Applied pointer-based memory management and file handling for persistent storage. Developed a CLI interface with real-time seat availability and error handling.</li>
-      <li><strong>Snake Game (2022)</strong> (C Programming – Academic Project): Developed a classic Snake game with mechanics for movement, growth, and collision detection. Used linked lists to dynamically manage the snake’s body and food consumption.</li>
-      <li><strong>Scrabble Game Simulation (2022)</strong> (C Programming – Academic Project): Designed a terminal-based Scrabble game with word validation, scoring logic, and player interaction. Focused on efficient algorithms for real-time game processing.</li>
+      <li>
+        <strong>Application Web : Réseau de neurones pour la prédiction d’affections à partir de l’rétine (en cours, 2025, projet académique) </strong> : développement d’un modèle <mark>CNN</mark> sous <mark>TensorFlow/Keras</mark> pour analyser des images d’iris et prédire des pathologies. Exploration d’architectures avancées (<mark>ResNet</mark>, etc.), optimisation des <mark>hyperparamètres</mark> et acquisition approfondie des concepts théoriques des <mark>CNN</mark>. Actuellement, précision de <mark>95 %</mark> sur le jeu de données interne, sans signe de <mark>surapprentissage</mark> sur le <mark>batch de validation</mark> ; tests futurs prévus sur d’autres bases pour évaluer la <mark>robustesse</mark>.
+      </li>
+      <li>
+        <strong>Application Web de mise en relation employeurs-candidats (2025, projet académique)</strong> : création d’une application <mark>full-stack</mark> où les utilisateurs déposent CV, lettres de motivation ou offres. Extraction de texte, vectorisation <mark>TF‑IDF</mark> maison et calcul de <mark>similarité cosinus</mark> pour la <mark>compatibilité</mark>.
+      </li>
+            <li>
+        <strong>Système de gestion de réservation de train (2024)</strong> (<mark>C++</mark> – projet académique) : application fonctionnelle destinée à l’<mark>administrateur</mark> avec interface <mark>CLI</mark> exhaustive. Conception d’un système <mark>OOP</mark> intégrant : gestion complète des billets (création, suppression, modification avec génération/suppression dynamiques liées au temps/date), gestion des trains et des utilisateurs, <mark>gestion de dates</mark>. Implémentation d’une <mark>gestion efficace de la mémoire</mark> pour l’allocation/désallocation dynamique, sauvegarde et récupération des données, et système de stockage <mark>persistant</mark> solide.
+      </li>
+      <li>
+        <strong>Modèle prédictif de santé cardiovasculaire (2024)</strong> (<mark>Python/Pandas</mark> – projet académique) : développement d’un modèle de <mark>machine learning</mark> sur la plateforme <mark>DatascienceTest</mark> pour prévoir les risques cardiovasculaires. <mark>Feature engineering</mark>, tests d’exactitude et itérations pour affiner la performance.
+      </li>
+      <li>
+        <strong>Prédiction des prix de l’immobilier (2024)</strong> (projet Kaggle individuel) : analyse de données immobilières et création d’un <mark>Decision Tree Regressor</mark>, puis amélioration par <mark>Random Forest</mark> et <mark>Gradient Boosting</mark>.
+      </li>
+
+      <li>
+        <strong>Jeu Snake (2022, projet académique)</strong> (<mark>C</mark> – projet académique) : implémentation du jeu avec gestion dynamique du <mark>serpent</mark> par <mark>liste chaînée</mark> et <mark>détection de collision</mark>.
+      </li>
+
+      <li>
+        <strong>Simulation de Scrabble (2022, projet académique)</strong> (<mark>C</mark> – projet académique) : <mark>validation de mots</mark>, <mark>logique de score</mark> et interaction joueur.
+      </li>
     </ul>
   </section>
 
+
   <section>
-    <h2>Education</h2>
-    <p><strong>ECE Paris</strong> – Bachelor in Data Development and Artificial Intelligence<br />
-    <em>2023 – 2026 (Expected Graduation in 2026)</em></p>
-    <p><strong>Lycee louis le grand</strong> <p>2020 - 2022</p>
+    <h2>Formation</h2>
+    <p>
+      <strong>ECE Paris</strong> – Licence Développement de Données & Intelligence Artificielle<br/>
+      <em>2023 – 2026 (Diplôme prévu en 2026)</em>
+    </p>
+    <p>
+      <strong>Lycée Louis-le-Grand</strong><br/>
+      <em>2020 – 2022</em>
+    </p>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script>
+    document.getElementById('download-pdf').addEventListener('click', () => {
+      const options = {
+        margin:       0,
+        filename:     'CV_Thai_Minh_Khang.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(options).from(document.body).save();
+    });
+  </script>
 </body>
 </html>
+
